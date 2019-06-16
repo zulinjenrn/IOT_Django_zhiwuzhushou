@@ -1,0 +1,8 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于ColorUI组件库</view>
+  <view class='text-content'>
+    <view>Hi！欢迎使用'i'植物保姆！</view>
+    <view class='margin-top-sm'>****</view>
+    
+  </view>
+</view>

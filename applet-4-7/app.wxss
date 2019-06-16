@@ -1,0 +1,4 @@
+/**app.wxss**/
+
+@import "thirdparty/wxss/weui.wxss";
+

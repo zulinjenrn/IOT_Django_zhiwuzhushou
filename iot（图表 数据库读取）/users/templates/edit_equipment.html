@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑设备</title>
+</head>
+<body style="background-image: url({% static 'b3.jpg' %});background-size:100% 550%;">
+</body>
+<link rel="stylesheet" type="text/css" href="{% static 'stylesheets/index_work.css' %}">
+<body>
+ <style type="text/css">
+    h2{text-align: center;}
+    div{border: 1px solid red;width: 600px;height: 400px;style-size: 450px;}
+</style>
+<h1>编辑设备</h1>
+
+<form action="/edit_equipment/" method="post">
+    <input type="text" name="id" value="{{ equipment.id }}" style="display: none">
+    <input type="text" name="equipment_name" value="{{ equipment.name }}">
+    <input type="submit" value="提交">
+    <p style="color: red">{{ error }}</p>
+</form>
+
+
+</body>
+</html>

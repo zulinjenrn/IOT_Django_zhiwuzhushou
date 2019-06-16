@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/backup/backup",
+    "pages/weather/weather",
+    "pages/service/service",
+    "pages/homepage/homepage",
+    "pages/picker/picker",
+    "pages/Illumination/Illumination",
+    "pages/soilmoisture/soilmoisture",
+    "pages/temperature/temperature",
+    "pages/fertility/fertility",
+    "pages/caution/caution",
+    "pages/monitor/monitor"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "resources/icons/tabbar/page-index.png",
+        "selectedIconPath": "resources/icons/tabbar/page-index-color.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "分析",
+        "iconPath": "resources/icons/tabbar/page-application.png",
+        "selectedIconPath": "resources/icons/tabbar/page-application-color.png"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "个人中心",
+        "iconPath": "resources/icons/tabbar/page-personal.png",
+        "selectedIconPath": "resources/icons/tabbar/page-personal-color.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

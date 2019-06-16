@@ -1,0 +1,43 @@
+published:
+  - app:
+      category: life
+      application: Illumination
+      name: 光照
+      publish_date: 2018-10-01
+      url: /service/guangzhao
+      desc: this is a Illumination app.
+  - app:
+      category: life
+      application: soilmoisture
+      name: 含水量
+      publish_date: 2018-10-02
+      url: /service/shidu
+      desc: this is a backup soilmoisture app.
+  - app:
+      category: life
+      application: temperature
+      name: 温度
+      publish_date: 2018-10-05
+      url: /service/wendu
+      desc: this is a temperature app.
+  - app:
+      category: life
+      application: fertility
+      name: 肥力
+      publish_date: 2018-10-06
+      url: /service/feili
+      desc: this is a fertility app.
+  - app:
+      category: life
+      application: caution
+      name: 告警
+      publish_date: 2018-10-06
+      url: /service/constellation
+      desc: this is a caution app.
+  - app:
+      category: life
+      application: monitor
+      name: 监控
+      publish_date: 2018-10-02
+      url: /service/image
+      desc: this is a backup monitor app.

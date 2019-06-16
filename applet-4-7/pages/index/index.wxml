@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view wx:if='{{isAuthorized}}'>
+<view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">状态：</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text" wx:for='{{stockData}}' wx:key="*this">
+        <view class="weui-media-box__title weui-media-box__title_in-text" wx:if='{{item.is_rising}}'>设备：{{item.id}}</view>
+        <view class="weui-media-box__title weui-media-box__title_in-text" wx:else>设备：{{item.id}}</view>
+        <view>肥力：{{item.t}}</view>
+        <view>光照：{{item.h}}</view>
+        <view>养分：{{item.s}}</view>
+        <view>温度：{{item.g}}</view>
+        <view class="weui-media-box__info">
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+          <view class="button-sp-area">
+
+          <button class="weui-btn mini-btn" type="primary1" bindtap='send0' size="mini">开始收集数据</button>
+            
+            <button class="weui-btn mini-btn" type="primary1" bindtap='send1' size="mini">浇水</button>
+
+            <button class="weui-btn mini-btn" type="primary2" bindtap='send2' size="mini">施肥</button>
+
+          <button class="weui-btn mini-btn" type="primary1" bindtap='send3' size="mini">停止收集数据</button>
+            <!-- <button type='primary' bindtap='send'>请求数据</button> -->
+
+          </view>
+</view>
+
+<view wx:else>
+  <text>请先切换至个人页登录</text>
+</view>

@@ -1,0 +1,12 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view>
+    管理设备：<input type="number" name="shebeiid" placeholder="请输入设备ID"  />
+    状态（关闭/启用）：<switch name="status"/>
+    <!-- <view>成绩：<slider name="grade" show-value ></slider></view> -->
+  </view>
+ 
+  <view class="btn-area">
+    <button formType="submit">发送请求</button>
+    <!-- <button formType="reset">重置</button> -->
+  </view>
+</form>

@@ -1,0 +1,15 @@
+<view class="weui-panel weui-panel_access">
+    <view class="weui-panel__hd">告警：</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text" wx:for='{{stockData}}' wx:key="*this">
+        <view class="weui-media-box__title weui-media-box__title_in-text" wx:if='{{item.is_rising}}'>设备：{{item.id}}</view>
+        <view class="weui-media-box__title weui-media-box__title_in-text" wx:else>设备：{{item.id}}</view>
+        <view>肥力：正常</view>
+        <view>光照：正常</view>
+        <view>养分：正常</view>
+        <view>温度：正常</view>
+        <view class="weui-media-box__info">
+        </view>
+      </view>
+    </view>
+  </view>

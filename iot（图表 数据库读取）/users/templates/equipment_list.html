@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设备列表</title>
+</head>
+<body style="background-image: url({% static 'b3.jpg' %});background-size:100% 400%;">
+</body>
+<link rel="stylesheet" type="text/css" href="{% static 'stylesheets/index_work.css' %}">
+<body>
+  <style type="text/css">
+    h2{text-align: center;}
+    div{border: 1px solid red;width: 600px;height: 400px;style-size: 450px;}
+</style>
+<a class="on" href="/index">首页</a>
+
+<a href="/add_equipment/">添加新的设备</a>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>ID</th>
+        <th>设备名称</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for equipment in equipment_list %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ equipment.id }}</td>
+        <td>{{ equipment.name }}</td>
+        <td>
+            <a href="/delete_equipment/?id={{ equipment.id }}">删除</a>
+            <a href="/edit_equipment/?id={{ equipment.id }}">编辑</a>
+        </td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+</body>
+</html>

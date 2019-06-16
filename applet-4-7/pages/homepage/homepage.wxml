@@ -1,0 +1,63 @@
+<!--pages/homepage/homepage.wxml-->
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl">"i" 植物助手
+    </view>
+    <view class="margin-top-sm">
+      <text>By:三加队</text>
+    </view>
+    <image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+<view class="container">
+  <view class="userinfo">
+    <text wx:if="{{!hasUserInfo}}"> 请先登录 </text>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="weui-panel">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_small-appmsg">
+        <view class="weui-cells weui-cells_in-small-appmsg">
+          <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" data-type='add' bindtap='onNavigatorTap'>
+            <view class="weui-cell__hd">
+              <image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" />
+            </view>
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>添加设备</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
+
+          <navigator class="weui-cell weui-cell_access" url="/pages/about" hover-class="weui-cell_active" data-type='about' bindtap='onNavigatorTap'>
+            <view class="weui-cell__hd">
+              <image src="{{icon20}}" style="width: 20px;height: 20px;margin-right: 5px" />
+            </view>
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>关于"i"植物助手</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
+
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="page__bd page__bd_spacing button-sp-area">
+    <button class="weui-btn mini-btn" type="primary" disabled="{{isLogin}}" open-type='getUserInfo' bindgetuserinfo="onAuthorizeConfirm">授权登录</button>
+    <button class="weui-btn mini-btn" type="warn" disabled="{{! isLogin}}" bindtap='logout'>注销</button>
+  </view>
+</view>
+
+
+
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
