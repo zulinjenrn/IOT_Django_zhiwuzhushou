@@ -10,7 +10,13 @@
 
 摄像头、树莓派、数模转换模块、面包板、继电器、温湿度传感器、土壤湿度传感器
 
+![mark](http://tuchuang.xchcloud.cn/blog/20200614/oO1zduYOqiKp.png)
+
+![mark](http://tuchuang.xchcloud.cn/blog/20200614/r2HPQDXgpbKD.png)
+
 土壤肥力依据导电率计算得出、核心代码未放出
+
+## 图示
 
 ![mark](http://tuchuang.xchcloud.cn/blog/20200614/AuYbIpJ94SgM.png)
 
